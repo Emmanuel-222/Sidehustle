@@ -3,7 +3,7 @@ import { FaBars } from "react-icons/fa6";
 import { IoMdClose } from "react-icons/io";
 
 const Navbar = () => {
-  const [nav, setNav] = useState(false);
+  const [nav, setNav] = useState(true);
   const handleClick = () => setNav(!nav)
   return (
     <nav className="w-full p-4 fixed bg-[#191b1c] flex justify-between items-center gap-8 shadow-md text-white text-center sm:px-40">
