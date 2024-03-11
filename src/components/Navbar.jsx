@@ -6,7 +6,7 @@ const Navbar = () => {
   const [nav, setNav] = useState(true);
   const handleClick = () => setNav(!nav)
   return (
-    <nav className="w-full p-4 fixed bg-[#191b1c] flex justify-between items-center gap-8 shadow-md text-white text-center sm:px-40">
+    <nav className="w-full p-4 fixed bg-[#191b1c] flex justify-between items-center gap-8 shadow-lg text-white text-center sm:px-40">
       <h1 className="text-3xl font-serif cursor-pointer">logo</h1>
       <div className="hidden lg:flex justify-between items-center w-[700px] cursor-pointer">
         <div className="px-6 flex justify-around items-center gap-8 text-xs">

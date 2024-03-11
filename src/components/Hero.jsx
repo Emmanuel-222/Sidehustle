@@ -2,6 +2,8 @@ import { FaCirclePlay } from "react-icons/fa6"
 
 import heroImg from '../assets/hero-image.png';
 import companies from '../assets/companies.svg'
+
+import Button from '../components/Button'
 const Hero = () => {
   return (
     <div className="flex items-center justify-center flex-wrap lg:flex-nowrap w-full h-full px-[100px] bg-[#202122] pt-32 gap-8">
@@ -15,7 +17,7 @@ const Hero = () => {
             experience needed. Our interns are ready to take on entry-level and
             junior positions in just 8 weeks.
           </p>
-          <button className='mx-4 px-[14px] py-3 mb-4 bg-[#52a350] rounded-lg text-white hover:bg-white hover:text-[#52a350]'>Signup for Free</button>
+          <Button text='Signup for FREEE'/>
         </div>
         <img src={ companies } alt="" className="mx-4"/>
       </div>
