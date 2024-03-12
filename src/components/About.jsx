@@ -31,18 +31,17 @@ const CardData = [
 ]
 const About = () => {
   return (
-    <div className="flex items-start pt-20 lg:pt-32 justify-start flex-wrap lg:flex-nowrap w-full h-screen text-center bg-white gap-28 px-16">
-      <div className="w-full max-h-[300px] p-8 text-[#2f2f2f]">
-        <h1 className="text-2xl font-extrabold">
-          What you stand to <span className="text-[#52a350]">gain</span>
-        </h1>
-        <p className="text-center text-[14px] font-thin">
+    <div className="grid grid-cols-1 lg:grid-cols-2 
+    place-content-center gap-4">
+      <div className="grid grid-cols-1 md:col-start-3 md:col-end-6 text-[#2f2f2f] p-12 m-4">
+      <h2 className="text-xl font-bold style={margin-bottom: 0}">Your Heading</h2>
+        <p className="text-center text-[14px] font-thin font-mono">
           Since 2020, Side Hustle has trained over 350 thousand African youths
           in various fields across Engineering, Marketing, Product and Design.
         </p>
       </div>
 
-      <div className="w-full grid md:grid-cols-2 place-content-center gap-12 pb-8">
+      <div className="grid md:grid-cols-2 md:col-start-7 md:col-end-13 place-content-center m-4 gap-4">
         {
           CardData.map((item, index) => {
             return <Card key={index} data={item}/>

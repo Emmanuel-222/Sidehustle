@@ -4,7 +4,7 @@ import Navbar from "./components/Navbar"
 
 const App = () => {
   return (
-    <div className="font-serif bg-gray-100">
+    <div className="font-serif bg-gray-100 overflow-x-hidden">
       <Navbar />
       <Hero />
       <About />
@@ -13,4 +13,4 @@ const App = () => {
   )
 }
 
-export default App
+export default App;

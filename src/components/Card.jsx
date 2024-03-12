@@ -2,10 +2,10 @@ import PropTypes from 'prop-types'
 
 const Card = ({ data }) => {
   return (
-    <div className="flex justify-center items-center flex-col text-center mt-8">
+    <div className="min-w-12 flex justify-center items-center flex-col text-center rounded-2xl p-4">
         {data.icon}
-        <h4 className='text-base font-semibold'>{data.h4Text}</h4>
-        <p className='text-sm text-[#2f2f2f]'>{data.pText}</p>
+        <h4 className='font-semibold font-mono text-[18px]'>{data.h4Text}</h4>
+        <p className='text-sm text-[#2f2f2f] font-mono text-wrap'>{data.pText}</p>
     </div>
   );
 };
